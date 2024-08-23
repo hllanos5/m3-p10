@@ -23,7 +23,8 @@ export default function CarritoProvider({ children }) {
                 sumarCantidad,
                 restarCantidad,
                 addCarrito,
-                setAddCarrito
+                setAddCarrito,
+                setCantidad
             }}
         >
             {children}

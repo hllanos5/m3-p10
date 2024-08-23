@@ -8,7 +8,7 @@ import { Button } from 'primereact/button';
 import {  CarritoContext } from "../context/CarritoProvider"
 
 export function NavBar() {    
-    const { cantidad, sumarCantidad, restarCantidad, addCarrito, setAddCarrito } = useContext(CarritoContext);
+    const { cantidad, sumarCantidad, restarCantidad, addCarrito, setAddCarrito, setCantidad } = useContext(CarritoContext);
     const op = useRef(null);
 
     const items = [
@@ -55,7 +55,7 @@ export function NavBar() {
                                 <div className="calculo">$125.00 x {cantidad} <span style={{fontWeight:'bold'}}>$ { Math.round((cantidad*125) * 100) / 100}</span></div>
                             </div>
                             <div className="seccion-eliminar">
-                                <i className="pi pi-trash" style={{'fontSize': '1rem', cursor:'pointer'}} onClick={()=> {setAddCarrito(false)}}>
+                                <i className="pi pi-trash" style={{'fontSize': '1rem', cursor:'pointer'}} onClick={()=> {setAddCarrito(false); setCantidad(0);}}>
                             </i>  
                             </div>
                         </div>

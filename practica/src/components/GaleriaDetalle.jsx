@@ -1,5 +1,7 @@
 import React from 'react'
 import { Card } from 'primereact/card';
+import { Button } from 'primereact/button';
+
 
 export function GaleriaDetalle() {
   return (
@@ -19,6 +21,12 @@ export function GaleriaDetalle() {
         </div>
         <div className='descuento'>
             <h3>$250.00</h3>
+        </div>
+        <div className='seccion-botones'>
+            <Button icon="pi pi-minus" style={{ background:'#80808063',border:'none', color:'orange' }}/>
+            <label htmlFor="">0</label>
+            <Button icon="pi pi-plus" style={{ background:'#80808063',border:'none', color:'orange'  }}/>
+            <Button label="Add to Cart" icon="pi pi-shopping-cart" style={{ background:'#d46202', border:'none', marginLeft:'1rem' }} />
         </div>
     </Card>
   )

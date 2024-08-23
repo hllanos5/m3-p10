@@ -69,6 +69,18 @@ main{
                         font-size: 1rem;
                     }
                 }
+                .seccion-botones{
+                    width: auto;
+                    display: flex;
+                    align-items: center;
+                    label{
+                        padding-inline: 1rem;
+                    }
+                    .p-button-label{
+                        font-weight: 500;
+                    }
+
+                }
             }
         }
     }

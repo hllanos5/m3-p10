@@ -85,6 +85,36 @@ main{
         }
     }
 }
+.p-galleria-mask{
+    
+    --maskbg:  rgba(0,0,0,0.5);
+}
+.galeria-modal {
+    margin-top: 60px;
+    .p-galleria-thumbnail-container{
+        background: rgba(127,127,127,-0.5);
+        .p-galleria-thumbnail-prev, .p-galleria-thumbnail-next{
+            display: none;
+        }
+    }
+    .p-galleria-close{
+        left: 64.5%;
+    }
+    .p-galleria-item-prev {
+        left: 29%;
+        top: 40%;
+        color:black;
+        background: white;
+        border-radius: 50%;
+    }
+    .p-galleria-item-next {
+        left: 66%;
+        top: 40%;
+        color:black;
+        background: white;
+        border-radius: 50%;
+    }
+}
 .p-overlaypanel-content{
     padding: 0;
     .carrito-detalle{

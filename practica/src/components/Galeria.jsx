@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Galleria } from 'primereact/galleria';
+import { Button } from 'primereact/button';
 
 export function Galeria() {
     const [images, setImages] = useState(null);
+    const [imagesModal, setImagesModal] = useState(null);
+
+    const galleria = useRef(null);
+
     const responsiveOptions = [
         {
             breakpoint: '991px',
@@ -34,7 +39,13 @@ export function Galeria() {
         <div className="galeria">
             <Galleria value={images} responsiveOptions={responsiveOptions} numVisible={4} style={{ maxWidth: '640px' }} 
                 item={itemTemplate} thumbnail={thumbnailTemplate} />
+            
+            <Galleria ref={galleria} value={images} responsiveOptions={responsiveOptions} numVisible={4} style={{ maxWidth: '50%' }} 
+                circular fullScreen showItemNavigators item={itemTemplate} thumbnail={thumbnailTemplate}  className='galeria-modal'/>
+        
+            <Button label="Show" icon="pi pi-external-link" onClick={() => galleria.current.show()} />
         </div>
+        
     )
 }
 

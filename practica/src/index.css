@@ -1,5 +1,5 @@
 main{
-    margin-inline: 2rem;
+    margin-inline: 5rem;
     margin-block: 2rem;
     .card{
         
@@ -7,7 +7,7 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 1rem;
+            gap: 1.4rem;
         }
     }
 }

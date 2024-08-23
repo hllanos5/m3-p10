@@ -32,7 +32,7 @@ export function NavBar() {
 
     return (
         <div className="card">
-            <Menubar model={items} start={start} end={end} />
+            <Menubar model={items} start={start} end={end} style={{'background-color':'white', 'border':'none'}}/>
         </div>
     )
 }

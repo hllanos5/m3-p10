@@ -52,7 +52,7 @@ export function NavBar() {
                             </div>
                             <div className="seccion-detalle">
                                 <div className="producto-titulo">Fall Limited Edition Sneakers</div>
-                                <div className="calculo">$125.00 x 3 <span>$375.00</span></div>
+                                <div className="calculo">$125.00 x {cantidad} <span style={{fontWeight:'bold'}}>$ { Math.round((cantidad*125) * 100) / 100}</span></div>
                             </div>
                             <div className="seccion-eliminar">
                                 <i className="pi pi-trash" style={{'fontSize': '1rem', cursor:'pointer'}} onClick={()=> {setAddCarrito(false)}}>

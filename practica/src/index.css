@@ -122,6 +122,9 @@ main{
         flex-direction: column;
         width: 20rem;
         margin-block: 1rem;
+        .vacio {
+            text-align: center;
+        }
         .titulo{
             padding-inline: 8px;
             padding-bottom: 8px;

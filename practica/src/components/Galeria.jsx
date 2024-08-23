@@ -37,7 +37,7 @@ export function Galeria() {
     return (
         <div className="galeria">
             <Galleria value={images} responsiveOptions={responsiveOptions} numVisible={4} style={{ maxWidth: '640px' }} 
-                item={itemTemplate} thumbnail={thumbnailTemplate} />
+                item={itemTemplate} thumbnail={thumbnailTemplate} onClick={() => galleria.current.show()}/>
             
             <Galleria ref={galleria} value={images} responsiveOptions={responsiveOptions} numVisible={4} style={{ maxWidth: '50%' }} 
                 circular fullScreen showItemNavigators item={itemTemplate} thumbnail={thumbnailTemplate}  className='galeria-modal'/>

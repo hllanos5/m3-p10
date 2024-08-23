@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavBar } from "./components/NavBar";
 import { Galeria } from "./components/Galeria";
+import { GaleriaDetalle } from "./components/GaleriaDetalle";
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
           <Galeria/>
         </div>
         <div className="lado-derecho">
-
+          <GaleriaDetalle/>
         </div>
       </div>
     </main>
